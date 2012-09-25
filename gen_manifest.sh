@@ -36,5 +36,5 @@ TAIL=$((`grep -n '<project ' default.xml | tail -n 1 | cut -d ':' -f 1` + 1))
 
 head -n $HEAD default.xml
 grep_projs '.*' CyanogenMod
-grep_projs 'proprietary_vendor_' koush
+grep_projs 'proprietary_vendor_'  TheMuppets
 tail -n +$TAIL default.xml
